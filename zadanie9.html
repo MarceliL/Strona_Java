@@ -31,15 +31,23 @@
             
 		  
 		 if(1<=a&&b<=31&&a<b){
-              var czas;
-              czas = (b-a)*86400;
-              var czas_godziny;
+             		 var czas
+			 
+             		 czas = (b-a)*86400;
+			 
+              			var czas_godziny;
+			 
               czas_godziny=czas + (godzina1*3600) + (godzina2*3600)
+			 
                document.write("<p style='color: green;font-size: 52px';>")
+			 
 		 document.write("Od godziny " +c+ " dnia " +a+ " do godziny " +d+ " dnia " +b+ " minelo: " +czas_godziny+ " sekund <br>" );
+			 
           }else{
+		  
               document.write("jest źle popraw dane ")
           }
+		 
          }
 		
         </script>
