@@ -1,61 +1,54 @@
-<html> 
-  <head> 
-   <title> obliczenia V  i  Pc walca </title>
-    
+<html>
+ <head>
+  <title> Przykład obliczenia obwodu i pola prostokata </title>
+
    <script language="JavaScript">
+ 
+     function Obwod_SUROWIEC(F_LYZ,h_LYZ) {
 
-     function V(r,h)
-{
-    r_LYZ=parseFloat(r)
-     h_LYZ=parseFloat(h)
-     V_LYZ=Math.PI*r_LYZ*r_LYZ*h_LYZ
-     document.getElementsByName('obj')[0].value=V_LYZ.toFixed(2);   
-     alert("V="+V_LYZ.toFixed(2)+" cm^3");                                                
-    pokaz1_LYZ.innerHTML="V="+V_LYZ.toFixed(2)+" cm^3"+"<br>";        
- }
-function Pc(r,h)
-{
-    r_LYZ=parseFloat(r)
-    h_LYZ=parseFloat(h)
-   Pc_LYZ=2*Math.PI*r_LYZ*r_LYZ+2*Math.PI*r_LYZ*h_LYZ
-   document.getElementsByName('pole')[0].value=Pc_LYZ.toFixed(2);
-   alert("Pc="+Pc_LYZ.toFixed(2)+" cm^2");
-   pokaz2_LYZ.innerHTML="Pc="+Pc_LYZ.toFixed(2)+"cm^2";
+       F_LYZ=parseFloat(F_LYZ)
+       h_LYZ=parseFloat(h_LYZ) 
+       Obw_LYZ_wynik=2*F__LYZ+2*h__LYZ 
+       document.getElementsByName('obj')[0].value=Obwod_LYZ_wynik.toFixed(2); 
+       alert("Obwod="+Obw_LYZ_wynik.toFixed(2)+" cm"); 
+       P1.innerHTML="Obwod="+Obw_LYZ_wynik.toFixed(2)+" cm"+"<br>"; }
+      
+     function Pole_LYZ(F_LYZ,h_LYZ){
+       
+       F_LYZ=parseFloat(F_LYZ)  
+       h_LYZ=parseFloat(h_LYZ)  
+       Pole_LYZ_wynik=F_LYZ*h_LYZ
+       document.getElementsByName('pole')[0].value=Pole_LYZ_wynik.toFixed(2);
+       alert("Pole="+Pole_LYZ_wynik.toFixed(2)+" cm^2");
+       P2.innerHTML="Pole="+Pole_LYZ_wynik.toFixed(2)+"cm^2";
 }
-       </script>
+ </script>
   </head>
-  
-  
-   <body> 
+<body>
+Obliczanie Obwodu i Pola prostokata
+<br>
+ <br>
+<form name="formularz" action="..." onsubmit="Obw_LYZ(this.promien.value,this.wysokosc.value);
+Pole_LYZ(this.promien.value,this.wysokosc.value);return false">
+ a=
+<input size="7" name="promien">
 
-     Pobliczanie V   i    Pc walca
-              <br> <br>
-<form name="formularz" action="..." onsubmit="V(this.promien.value,this.wysokosc.value); Pc(this.promien.value,this.wysokosc.value);return false">  
- Podaj r=
-
-  <input  size="6"  name="promien">
- Podaj h=
-
-  <input  size="6"  name="wysokosc">
+ b=
+<input size="7" name="wysokosc">
 <br>
 <br>
-
-  <input  TYPE="submit"  Value="oblicz" >
+<input TYPE="submit" Value="oblicz" >
 <br>
 <br>
- V=
-
-  <input  size="6"  name="obj">
- Pc=
-
-  <input  size="6"  name="pole">
+Obwod=
+<input size="7" name="obj">
+Pole=
+<input size="7" name="pole">
 </form>
+<table>
+<tr id="P1"></tr>
+<tr id="P2"></tr>
 
-     <table>
-<tr id="pokaz1_LYZ"></tr>
-<tr id="pokaz2_LYZ"></tr>
-
-  </table>
-
-</body> 
+</table>
+</body>
 </html>
