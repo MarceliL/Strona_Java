@@ -9,7 +9,7 @@
 	var mm=prompt("A=","");				
 	 var w;				
 	  var w2;				
-	   var m_SUR=parseFloat(mm);
+	   var m_LYZ=parseFloat(mm);
 	
  wynik=(m_LYZ+1);				
  wynik2=(m_LYZ*(m_LYZ+1));				
