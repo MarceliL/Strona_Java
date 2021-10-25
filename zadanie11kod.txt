@@ -1,22 +1,19 @@
 <html>
   <head>
-    <title>Przyk³ad nr tutaj wpisz odpowiedni nume </title>
-   <script language="JavaScript">
-     function WinOpen_lyzen()
-
-     {
-window.open("zadanie 8 kod.txt","okienko","toolbar=no,directories=no,menuar=no,height=280,width=160,top=200,left=200");
-     }
-	 
- </script>
-</head>
- <body>
-  <form>
-  
-  <input type="button" name="zadanie 8 kod.txt" value="zadanie 8 kod.txt" onclick="WinOpen_lyzen_(' ')">
-   
-   </form>
-
- 
-  </body>
-   </html>
+    <title>Zadanie 11</title>
+       </head>
+    <body>
+      <div style="color:green;font-size:60px;">
+         <script type="text/javascript">
+             
+  let m_LYZ = parseInt(prompt("Liczba: "));
+ document.write("liczba: " + m_LYZ + "</br>" + "1/" + m_LYZ + "= 1/" +  (parseInt(m_LYZ)+1) + " + 1/" + (parseInt(m_LYZ)*(parseInt(m_LYZ)+1)) +"
+</br>
+" +"1/" + (parseInt(m_LYZ)+1) + "= 1/" +  (parseInt(m_LYZ)+1+1) + " + 1/" + ((parseInt(m_LYZ)+1)*(parseInt(m_LYZ)+2)) +"
+</br>
+" +"= 1/" +  (parseInt(m_LYZ)+1+1) + " + 1/" + ((parseInt(m_LYZ)+1)*(parseInt(m_LYZ)+2)) + " + 1/" + (parseInt(m_LYZ)*(parseInt(m_LYZ)+1)));
+            
+         </script>
+        </div>
+     </body>
+</html>  
