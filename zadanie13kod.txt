@@ -1,22 +1,32 @@
 <html>
-  <head>
-    <title>Przyk³ad nr tutaj wpisz odpowiedni nume </title>
-   <script language="JavaScript">
-     function WinOpen_lyzen()
+ <head>
+  <script type="text/javascript">
+  function obliczenia() {
+	  
+    var L1_LYZ=prompt("liczba a");
+     var L2_LYZ=prompt("liczba b");
+      var La_LYZ=parseFloat(L1_LYZ);
+       var Lb_LYZ=parseFloat(L2_LYZ);
+        var suma_LYZ = La_LYZ + Lb_LYZ;
+         var suma3_LYZ = Math.pow(suma_LYZ, 3);
+          var a3_LYZ = Math.pow(La_LYZ, 3);
+           var b3_LYZ = Math.pow(Lb_LYZ, 3);
+            var a2_LYZ = Math.pow(La_LYZ, 2);
+             var b2_LYZ = Math.pow(Lb_LYZ, 2);
+              var m1_LYZ = 3 * a3_LYZ * Lb_LYZ;
+               var m2_LYZ = 3 * La_LYZ * b2_LYZ;
+	  
+    document.write("<p style='color: navy;font-size: 50px';>")
+    document.write(suma3_LYZ+" = "+a3_LYZ+ " + " +m1_LYZ+ " + " +m2_LYZ+ " + " +b3_LYZ);
 
-     {
-window.open("zadanie 8 kod.txt","okienko","toolbar=no,directories=no,menuar=no,height=280,width=160,top=200,left=200");
-     }
-	 
- </script>
+  }
+
+	 </script>
+
 </head>
- <body>
-  <form>
-  
-  <input type="button" name="zadanie 8 kod.txt" value="zadanie 8 kod.txt" onclick="WinOpen_lyzen_(' ')">
-   
-   </form>
-
- 
-  </body>
-   </html>
+	<body>
+<input type="button" onclick="obliczenia()" value="Liczymy!"/>   
+		
+    </body>
+	
+</html>
