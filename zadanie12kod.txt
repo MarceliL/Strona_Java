@@ -1,22 +1,18 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>Przyk³ad nr tutaj wpisz odpowiedni nume </title>
-   <script language="JavaScript">
-     function WinOpen_lyzen()
+  <body>
+	<div style="color:green;font-size:60px;">
+	<script language="JavaScript">
 
-     {
-window.open("zadanie 8 kod.txt","okienko","toolbar=no,directories=no,menuar=no,height=280,width=160,top=200,left=200");
-     }
-	 
- </script>
-</head>
- <body>
-  <form>
-  
-  <input type="button" name="zadanie 8 kod.txt" value="zadanie 8 kod.txt" onclick="WinOpen_lyzen_(' ')">
-   
-   </form>
+		var mm=prompt("K=","");
+		  var wynik;
+		   var m_LYZ=parseFloat(mm);
+		
+	wynik=(m_LYZ*2);
+	document.write("1/"+m_LYZ+"=1/"+wynik+"+1/"+wynik);
 
- 
+     </script>
+		
+	  </div>	  
   </body>
-   </html>
+</html>
