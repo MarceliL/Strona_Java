@@ -1,22 +1,58 @@
-<html>
-  <head>
-    <title>Przyk³ad nr tutaj wpisz odpowiedni nume </title>
+<html> 
+  <head> 
+   <title> obliczenia V  i  Pc walca </title>
+    
    <script language="JavaScript">
-     function WinOpen_lyzen()
 
-     {
-window.open("zadanie 8 kod.txt","okienko","toolbar=no,directories=no,menuar=no,height=280,width=160,top=200,left=200");
-     }
-	 
- </script>
-</head>
- <body>
-  <form>
+     function V(r,h)
+{
+    r_LYZ=parseFloat(r)
+     h_LYZ=parseFloat(h)
+     V_LYZ=Math.PI*r_LYZ*r_LYZ*h_LYZ
+     document.getElementsByName('obj')[0].value=V_LYZ.toFixed(2);   
+     alert("V="+V_LYZ.toFixed(2)+" cm^3");                                                
+    pokaz1_LYZ.innerHTML="V="+V_LYZ.toFixed(2)+" cm^3"+"<br>";        
+ }
+function Pc(r,h)
+{
+    r_LYZ=parseFloat(r)
+    h_LYZ=parseFloat(h)
+   Pc_LYZ=2*Math.PI*r_LYZ*r_LYZ+2*Math.PI*r_LYZ*h_LYZ
+   document.getElementsByName('pole')[0].value=Pc_LYZ.toFixed(2);
+   alert("Pc="+Pc_LYZ.toFixed(2)+" cm^2");
+   pokaz2_LYZ.innerHTML="Pc="+Pc_LYZ.toFixed(2)+"cm^2";
+}
+       </script>
+  </head>
   
-  <input type="button" name="zadanie 8 kod.txt" value="zadanie 8 kod.txt" onclick="WinOpen_lyzen_(' ')">
-   
-   </form>
+  
+   <body> 
 
- 
-  </body>
-   </html>
+     Pobliczanie V   i    Pc walca
+              <br> <br>
+<form name="formularz" action="..." onsubmit="V(this.promien.value,this.wysokosc.value); Pc(this.promien.value,this.wysokosc.value);return false">  
+ Podaj r=
+
+  <input  size="6"  name="promien">
+ Podaj h=
+
+  <input  size="6"  name="wysokosc">
+<br>
+<br>
+
+  <input  TYPE="submit"  Value="oblicz" >
+<br>
+<br>
+ V=
+
+  <input  size="6"  name="obj">
+ Pc=
+
+  <input  size="6"  name="pole">
+</form>
+
+     <table>
+<tr id="pokaz1_LYZ"></tr>
+<tr id="pokaz2_LYZ"></tr>
+
+  </table>
